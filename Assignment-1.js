@@ -191,3 +191,37 @@ newLine();
 • Input: "The quick brown fox"
 • Output: ["The", "quick", "brown", "fox"]
 */
+const splitStr = function(str) {
+    return str.split(" ");
+}
+let str = "The quick brown fox";
+console.log(splitStr(str));
+newLine();
+/*
+Part 2: Essay Questions 
+1. What is the difference between forEach and for...of? When would you use each?
+forEach is a method used for array by using callback function on the array elements, 
+for is a loop operator i can use on any iterative type and i can use (break, continue) statments.
+------------------------------------------------------
+2. What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples
+hoisting is raising the declration on a varible on the front line of the scope to excute it first with code 
+EX: console.log(X) //undefined
+    let x = 20;
+Temporal Dead Zone (TDZ) is when declare in assign value to variavle using let/const it goes in TZ that gives me varilbe but can't access their value 
+EX: console.log(X) //ERROR
+    let x = 20;
+---------------------------------------------------------
+3. What are the main differences between == and ===?
+     ==                ||    === 
+non-strict operator    || strict operator
+compare value only     || compare value + type
+---------------------------------------------------
+4. Explain how try-catch works and why it is important in async operations
+try-catch can handle error by excuting the block of code in try scope and if error happens it doesn't stop the whole code only excute catch scope code 
+it is important in async operations by not stopping the whole code or background operation 
+------------------------------------------------------------------------
+5. What’s the difference between type conversion and coercion? Provide examples of each?
+type conversion : it done manually by me using method EX : Number("123"); // 123 type number
+coercion : it done automatically by machine when using operators EX : console.log("5" + 5) // 10
+----------------------------------------------------------
+*/
